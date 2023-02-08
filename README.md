@@ -1,7 +1,7 @@
 # hw-03
 hw-03 - Interactive Webpage
 
-(GitHub Pages)[insert your clickable hyperlink here]
+(GitHub Pages)[link](https://ds4200-s23-class.github.io/Hw-03-george-travis/)
 
 Clone this repo and work locally. Be sure to push the final version of your code (and any significant updates along the way) before submitting. 
 

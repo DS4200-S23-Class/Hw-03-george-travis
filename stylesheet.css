@@ -5,7 +5,6 @@
 #imgs {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .row {
@@ -16,7 +15,17 @@
   flex: 50%;
 }
 
+#vis-writeups {
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+}
+
 #centered {
   font-size: 25px;
+  text-align: center;
+}
+
+h4 {
   text-align: center;
 }

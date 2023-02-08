@@ -13,7 +13,7 @@
 
     <div class="row">
         <div class="column">
-            <div class="flex-container">
+            <div class="flex-container" id="imgs">
                 <div>
                     <img src="img/vis1.png">
                 </div>
@@ -23,14 +23,89 @@
                 <div></div>
             </div>
         </div>
-        <div class="column">
-            <p>column2</p>
+
+        <div class="column" id="vis1">
+            <div class="flex-container" id="vis-writeups">
+                <h3>Marks:</h3>
+                    <ul><li>States use areas</li>
+                        <li>Bar chart uses lines</li>
+                    </ul>
+
+                <h3>Channels:</h3>
+                        <ul>
+                            <li>Horizontal and vertical position:
+                                <ul><li>Represents attribute of categorical type (states).</li>
+                                    <li>The horizontal and vertical position of states helps users identify them if users are familiar with the map of the USA. The map of the USA is a better mapping than others as it is commonly used. The issue with this mapping, however, lies in the fact that it does not state relevant information about states.
+                                    </li>
+                                </ul></li>
+                            <li>Color (hue):
+                                <ul><li>Represents attribute of categorical type (Democrat vs. Republican).</li>
+                                    <li>This is a good mapping as the colors share the same luminance and saturation, but their hues are much different. The stark contrast of these hues allows users to easily identify which party won which state. Also, these are the most commonly associated colors with the two political parties being compared.</li>
+                                </ul>
+                            </li>
+                            <li>Shape:
+                                <ul><li>Represents attribute of categorical type (states).</li>
+                                    <li>Similar to the position channel, this channel is used to show the shape of states and the USA. This is a good mapping as it is often used in these scenarios and users should know what it means. It has the drawback that it does not provide enough context about the state populations.</li>
+                                </ul>
+                            </li>
+                            <li>Area:
+                                <ul><li>Represents attribute of quantitative type (Electoral College votes).</li>
+                                    <li>This is a good mapping as the area covered by the bar chart is proportional to the number of Electoral College votes garnered by each side.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                <h3>Colormap(s):</h3>
+                    <ul><li>Categorical colormap (blue vs. red)
+                            <ul><li>Represents attributes of categorical type.</li>
+                                <li>This is a good mapping because the colors are perceptually distant and have roughly the same saturation and value. The saturation does not confuse users.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                <h3>Marks:</h3>
+                    <ul><li>States use areas</li>
+                        <li>Bar chart uses lines</li>
+                    </ul>
+
+                <h3>Channels:</h3>
+                        <ul>
+                            <li>channel1
+                                <ul><li>Represents attribute of </li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li>channel2
+                                <ul><li>Represents attribute of </li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li>channel3
+                                <ul><li>Represents attribute of</li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li>channel4
+                                <ul><li>Represents attribute of</li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                <h3>Colormap(s):</h3>
+                    <ul><li>colormap 1
+                            <ul><li>Represents attributes of</li>
+                                <li>This is a good mapping because </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
         </div>
     </div>
 
     <div>
         <h4>Acknowledgements</h4>
-        <ul>
+        <ul id="ackn">
             <li> <a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Columns</a></li>
         </ul>
     </div>

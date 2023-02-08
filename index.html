@@ -2,7 +2,7 @@
 <html> 
 
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
 </head>
 
@@ -11,21 +11,16 @@
     <title>hw-03</title>
     <header id="centered">hw-03: Interactive Webpage, and Marks & Channels</header>
 
-    <div class="row">
-        <div class="column">
-            <div class="flex-container" id="imgs">
+    <div class="column">
+
+        <div class="column-item">
                 <div>
                     <img src="img/vis1.png">
                 </div>
-                <div>
-                    <img src="img/vis2.png">
-                </div>
-                <div></div>
-            </div>
         </div>
 
-        <div class="column">
-            <div class="flex-container" id="vis-writeup1">
+        <div class="column-item">
+            <div class="flex-container" id="vis-writeups">
                 <h3>Marks:</h3>
                     <ul><li>States use areas</li>
                         <li>Bar chart uses lines</li>
@@ -50,7 +45,7 @@
                             </li>
                             <li>Area:
                                 <ul><li>Represents attribute of quantitative type (Electoral College votes).</li>
-                                    <li>This is a good mapping as the area covered by the bar chart is proportional to the number of Electoral College votes garnered by each side.</li>
+                                    <li>This is a good mapping as the area covered by the bar chart is proportional to the number of Electoral College votes garnered by each side. The boxes at the bottom show how Maine and Nebraska distribute each Electoral College vote as they split them</li>
                                 </ul>
                             </li>
                         </ul>
@@ -62,49 +57,98 @@
                             </ul>
                         </li>
                     </ul>
+            </div>
+        </div>
 
+        <div class="column-item">
+            <div>
+                <img src="img/vis2.png">
+            </div>
+        </div>
+
+        <div class="column-item">
+            <div class="flex-container" id="vis-writeups">
                 <h3>Marks:</h3>
                     <ul><li>Batted balls are displayed as points</li>
                         <li>Different types of hits (pop-ups, fly balls, line drives, ground balls) are designated via lines.</li>
                     </ul>
 
                 <h3>Channels:</h3>
-                        <ul>
-                            <li>Horizontal and vertical position:
-                                <ul><li>Represents attribute of quantitative type.</li>
-                                    <li>The x-axis shows the exit velocity (in mph) of batted balls, and the y-axis shows the launch angle (in degrees) of batted balls. This is a good mapping as it allows users to compare the speed of a ball with its launch angle, and what that means for the resulting hit.</li>
-                                </ul>
-                            </li>
-                            <li>Color (luminance)
-                                <ul><li>Represents attribute of quantitative type (LWTS).</li>
-                                    <li>This is a good mapping because it gives differentiability to the chart. The luminance of the data points allows users to understand which points have the strongest (or weakest) value. This mapping struggles as the background is light and that is also how average value points show up. It can be difficult to see these points and understand their meaning.</li>
-                                </ul>
-                            </li>
-                            <li>Vertical position:
-                                <ul><li>Represents attribute of categorical type (type of batted ball).</li>
-                                    <li>This is a good mapping as it provides separability to the visualization. It gives users an easy way to understand exactly how different batted balls have performed.</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                <h3>Colormap(s):</h3>
-                    <ul><li>Divergent colormap
-                            <ul><li>Represents attributes of quantitative type.</li>
-                                <li>This is a good mapping because it shows the full range of the LWTS on different batted balls. The colors at either end of the spectrum are perceptually different enough for users to be able to tell at a glance what is "good" and what is "bad". The only issue is that the average value is depicted as white and it seems to blend in to the background a bit.</li>
+                    <ul>
+                        <li>Horizontal and vertical position:
+                            <ul><li>Represents attribute of quantitative type.</li>
+                                <li>The x-axis shows the exit velocity (in mph) of batted balls, and the y-axis shows the launch angle (in degrees) of batted balls. This is a good mapping as it allows users to compare the speed of a ball with its launch angle, and what that means for the resulting hit.</li>
+                            </ul>
+                        </li>
+                        <li>Color (luminance)
+                            <ul><li>Represents attribute of quantitative type (LWTS).</li>
+                                <li>This is a good mapping because it gives differentiability to the chart. The luminance of the data points allows users to understand which points have the strongest (or weakest) value. This mapping struggles as the background is light and that is also how average value points show up. It can be difficult to see these points and understand their meaning.</li>
+                            </ul>
+                        </li>
+                        <li>Vertical position:
+                            <ul><li>Represents attribute of categorical type (type of batted ball).</li>
+                                <li>This is a good mapping as it provides separability to the visualization. It gives users an easy way to understand exactly how different batted balls have performed.</li>
                             </ul>
                         </li>
                     </ul>
+
+                <h3>Colormap(s):</h3>
+                    <ul><li>Divergent colormap
+                        <ul><li>Represents attributes of quantitative type.</li>
+                            <li>This is a good mapping because it shows the full range of the LWTS on different batted balls. The colors at either end of the spectrum are perceptually different enough for users to be able to tell at a glance what is "good" and what is "bad". The only issue is that the average value is depicted as white and it seems to blend in to the background a bit.</li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
+        <div class="column-item">    
+            <div>
+                <img src="img/vis3.png" class="jordan">
+            </div>
+        </div>
+
+        <div class="column-item">
+            <div class="flex-container" id="vis-writeups">
+                <h3>Marks</h3>
+                    <ul>
+                        <li>Points</li>
+                    </ul>
+
+                <h3>Channels</h3>
+                    <ul>
+                        <li>Color</li>
+                        <ul>
+                            <li> Using Red to help MJs dot stand out. Was going to put a picture of his face but wanted to use color.</li>
+                            <li>This is a good choice, as it makes it clear who the visualization is focused on.</li>
+                        </ul>
+                        <li>Position</li>
+                            <ul>
+                                <li>This is a scatter plot including every NBA player who played in the last 50 years. The X axis is a players Avg Raptor Defense throughout their career and the Y axis is there Avg Raptor Offense. Each point is positioned on the graph accordingly.</li>
+                                <li>The positions for this visualizaion were set in stone when I decided to do a scatter plot. This was a good choice :).</li>
+                            </ul>
+                        <li>Shape</li>
+                            <ul>
+                                <li>Each point on the graph is a different player. Used size as well as color to make MJ stand out</li>
+                                <li>This was a good choice as with so many players if all the dots were as big as MJs it would be hard to understand.</li>
+                            </ul>
+                    </ul>
+
+                <h3>Colormap(s)</h3>
+                    <ul>
+                        <li>Categorical ... kinda. Technically to make this visualizion I put MJ in his own group called Goat. Color was then based on if the player was in the group Goat.</li>
+                        <li>This is a good choice as the red makes MJ standout. The grey points in the background do a good job of showing the landscape but not taking away from the main point.</li>
+                    </ul>
+            </div>
         </div>
     </div>
-
+    </div>
     <div>
         <h4>Acknowledgements</h4>
         <ul id="ackn">
             <li> <a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Columns</a></li>
-            <li><a href="https://stackoverflow.com/questions/53392965/set-two-flex-items-side-by-side-in-a-flexbox-column">Column formatting</a></li>
-            
+            <li><a href="https://stackoverflow.com/questions/53392965/set-two-flex-items-side-by-side-in-a-flexbox-column">Implementing column formatting</a></li>
+            <li><a href="https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row">Understanding column formatting</a></li>
         </ul>
     </div>
 </body>

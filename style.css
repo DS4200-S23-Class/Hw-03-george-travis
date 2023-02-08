@@ -2,27 +2,28 @@
   font-family: Arial;
 }
 
-#imgs {
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-}
-
 .column {
-  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-item {
+  flex: 1 0 48%;
 }
 
 #vis-writeups {
   display: flex;
   flex-direction: column;
-  flex: 40%;
+}
+
+.jordan {
+  max-width: 85%;
+  max-height: 85%;
 }
 
 #centered {
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: bold;
   text-align: center;
 }
 

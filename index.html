@@ -64,42 +64,38 @@
                     </ul>
 
                 <h3>Marks:</h3>
-                    <ul><li>States use areas</li>
-                        <li>Bar chart uses lines</li>
+                    <ul><li>Batted balls are displayed as points</li>
+                        <li>Different types of hits (pop-ups, fly balls, line drives, ground balls) are designated via lines.</li>
                     </ul>
 
                 <h3>Channels:</h3>
                         <ul>
-                            <li>channel1
-                                <ul><li>Represents attribute of </li>
-                                    <li></li>
+                            <li>Horizontal and vertical position:
+                                <ul><li>Represents attribute of quantitative type.</li>
+                                    <li>The x-axis shows the exit velocity (in mph) of batted balls, and the y-axis shows the launch angle (in degrees) of batted balls. This is a good mapping as it allows users to compare the speed of a ball with its launch angle, and what that means for the resulting hit.</li>
                                 </ul>
                             </li>
-                            <li>channel2
-                                <ul><li>Represents attribute of </li>
-                                    <li></li>
+                            <li>Color (luminance)
+                                <ul><li>Represents attribute of quantitative type (LWTS).</li>
+                                    <li>This is a good mapping because it gives differentiability to the chart. The luminance of the data points allows users to understand which points have the strongest (or weakest) value. This mapping struggles as the background is light and that is also how average value points show up. It can be difficult to see these points and understand their meaning.</li>
                                 </ul>
                             </li>
-                            <li>channel3
-                                <ul><li>Represents attribute of</li>
-                                    <li></li>
-                                </ul>
-                            </li>
-                            <li>channel4
-                                <ul><li>Represents attribute of</li>
-                                    <li></li>
+                            <li>Vertical position:
+                                <ul><li>Represents attribute of categorical type (type of batted ball).</li>
+                                    <li>This is a good mapping as it provides separability to the visualization. It gives users an easy way to understand exactly how different batted balls have performed.</li>
                                 </ul>
                             </li>
                         </ul>
 
                 <h3>Colormap(s):</h3>
-                    <ul><li>colormap 1
-                            <ul><li>Represents attributes of</li>
-                                <li>This is a good mapping because </li>
+                    <ul><li>Divergent colormap
+                            <ul><li>Represents attributes of quantitative type.</li>
+                                <li>This is a good mapping because it shows the full range of the LWTS on different batted balls. The colors at either end of the spectrum are perceptually different enough for users to be able to tell at a glance what is "good" and what is "bad". The only issue is that the average value is depicted as white and it seems to blend in to the background a bit.</li>
                             </ul>
                         </li>
                     </ul>
             </div>
+
         </div>
     </div>
 
